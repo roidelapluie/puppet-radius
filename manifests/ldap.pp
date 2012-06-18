@@ -5,8 +5,8 @@ class radius::ldap (
 ) {
   package{
     'freeradius2-ldap':
-      ensure  => installed
-      require => Package['freeradius2']
+      ensure  => installed,
+      require => Package['freeradius2'],
   }
   file{
     '/etc/raddb/modules/ldap':
