@@ -238,7 +238,7 @@ client localhost {
 #   secret = testing123
 #        }
 #}
-<% radius_client.each do |ip, secret| %>
+<% radius_clients.each do |ip, secret| %>
 client <%= ip %> {
   secret = <%= secret %>
 }
