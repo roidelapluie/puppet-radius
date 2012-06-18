@@ -7,6 +7,6 @@ class radius {
     'radiusd':
       ensure    => running,
       hasstatus => true,
-      require   => Package['radiusd'],
+      require   => Package['freeradius2'],
   }
 }
