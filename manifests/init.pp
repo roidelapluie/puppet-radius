@@ -1,5 +1,5 @@
 class radius (
-  $radius_clients = hiera('radius_clients')
+  $radius_clients
 ) {
   package {
     'freeradius2':
