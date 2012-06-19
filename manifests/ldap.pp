@@ -14,6 +14,5 @@ class radius::ldap (
       content => template('radius/ldap.erb'),
       notify  => Service['radiusd'],
       require => Package['freeradius2-ldap'],
-
   }
 }
